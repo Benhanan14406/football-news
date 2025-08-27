@@ -34,7 +34,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "angelo-benhanan-footballnews.pbp.cs.ui.ac.i"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
