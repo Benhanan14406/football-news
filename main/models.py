@@ -2,7 +2,6 @@ import uuid
 from django.db import models
 
 # Create your models here.
-
 class News(models.Model):
     CATEGORY_CHOICES = [
         ('transfer', 'Transfer'),
