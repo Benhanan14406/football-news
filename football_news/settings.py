@@ -89,11 +89,11 @@ if PRODUCTION:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'angelo.benhanan', #os.getenv('DB_NAME'),
-            'USER': 'angelo.benhanan', #os.getenv('DB_USER'),
-            'PASSWORD': 'CkLwHOdR', #os.getenv('DB_PASSWORD'),
-            'HOST': '152.118.29.139', #os.getenv('DB_HOST'),
-            'PORT': '5432', #os.getenv('DB_PORT'),
+            'NAME': os.getenv('DB_NAME'),
+            'USER': os.getenv('DB_USER'),
+            'PASSWORD': os.getenv('DB_PASSWORD'),
+            'HOST': os.getenv('DB_HOST'),
+            'PORT': os.getenv('DB_PORT'),
             'OPTIONS': {
                 'options': f"-c search_path={os.getenv('SCHEMA', 'public')}"
             }
